@@ -14,6 +14,15 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 
+import { MaterialComponent } from './material/material.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule, MatRadioModule} from '@angular/material/';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon'
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +30,8 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    MaterialComponent
   ],
   imports: [
     HttpClientModule,
@@ -32,7 +42,8 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     BrowserModule,
     AppRoutingModule,
     BrowserModule,
-    FormsModule
+    FormsModule, 
+    MatCheckboxModule, BrowserAnimationsModule, MatRadioModule, MatCardModule, MatMenuModule, MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
